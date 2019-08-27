@@ -11,6 +11,13 @@ public class UserController {
 
     @PostMapping("/users/create")
     public User create(@RequestBody User user) {
+
+        return user;
+    }
+
+    @PostMapping("/users/createxml")
+    public User createxml(@RequestBody User user) {
+
         return user;
     }
 }
