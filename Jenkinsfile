@@ -13,7 +13,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo '========1. Maven Build ========'
-                sh '${params.MVN_HOME}/bin/mvn clean package'
+                sh "${params.MVN_HOME}/bin/mvn clean package"
             }
         }
     }
